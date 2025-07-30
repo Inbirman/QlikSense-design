@@ -7,7 +7,6 @@ Qlik Sense allows visual customization through CSS code embedded within KPI obje
 Using CSS in Qlik Sense lets you control:
 
 - Background color  
-- Filter pane styling  
 - Chart container appearance (shadows, padding, rounded corners)  
 - Title alignment and typography  
 - KPI styling  
@@ -37,45 +36,14 @@ I like to give my dashboards a soft gradient background to make them look more p
 ```css
 /* Apply a light blue gradient background to the whole sheet */
 .qv-panel-sheet {
-    background: linear-gradient(180deg, #99d2e6 0%, #5bb6d7 100%);
+    background: linear-gradient(180deg, #addbeb 0%, #46add2 100%);
 }
 ```
 
 This sets the overall tone of the dashboard and helps make other elements like containers and KPIs stand out more cleanly.
 
-### Filter Pane Settings
-
-The filter pane in Qlik Sense is composed of several parts: the outer frame, the main content area, and (depending on layout) an inner column structure. The following classes help style those elements for a clean look. I went with a baby-grayish blue tone that contrasts nicely with the background while avoiding the harshness of Qlik’s default white.
-
-#### 1. Outer Frame & Inner Content
-
-These two classes control the general frame and the inner grid content of the filter:
-
-```css
-.MuiGrid-root.MuiGrid-container.css-1khba41,
-.MuiGrid-root.MuiGrid-item.css-1wxaqej {
-    border: 1px solid #e6f2ff !important;
-    color: #005073 !important;
-}
-```
-
-#### 2. Column-Based Layout Variant
-
-This variation is used when filters are stacked in a column layout. It includes a soft background gradient and subtle shadow for depth:
-
-```css
-.MuiGrid-root.MuiGrid-container.MuiGrid-direction-xs-column.css-1te1p31 {
-    border: 2px solid #e6f2ff !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(#e6f2ff 70%, #a3c2d8 100%) !important;
-    color: #005073 !important;
-    border-radius: 4px;
-}
-```
-
 ### Container & Visualization Styling
 
-The containers and visualizations use the same soft baby-blue/gray tone as the filters. This consistent color scheme helps the charts stand out more clearly against the gradient background, while keeping the overall look clean and calm.
 
 #### Container Styling – .qv-object-container
 
@@ -83,7 +51,7 @@ This styles the outer container around each visualization, giving it padding, so
 
 ```css
 .qv-object-container {
-    background-color: rgba(230, 242, 255, 0.8);
+    background-color: rgba(231, 242, 254, 0.8);
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
     padding: 0px 2px 5px 2px;
@@ -103,7 +71,7 @@ The visual elements themselves—charts, tables, and combos—inherit a similar 
 .qv-object-table,
 .qv-object-combochart,
 .qv-object-piechart {
-    background-color: rgba(230, 242, 255, 1);
+    background-color: rgba(231, 242, 253, 1);
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
     margin: 0px 2px 10px 2px;
@@ -121,7 +89,7 @@ The visual elements themselves—charts, tables, and combos—inherit a similar 
 
 ```css
 .qv-object-kpi {
-    background-color: rgba(153, 210, 230, 0);
+    background-color: rgba(91, 182, 215, 0);
     border-radius: 1px;
     padding: 5px;
     margin: 5px 0;
@@ -149,12 +117,8 @@ Tip: If you're struggling to find the correct class, try copying the entire HTML
 
 Make sure that the theme is "Sense Classic".
 
-## Possible Enhancements
+## Possible Enhancements 
 
 - Dark mode theme  
 - Project-based themes (different palettes or layouts for different dashboards)  
 - Hover effects (test carefully — they sometimes blur visualizations)
-
-## CSS File
-
-The full CSS file used in this tutorial is under `code-CSS` (change after testing).
