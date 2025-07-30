@@ -1,28 +1,13 @@
 /* Background gradient for entire sheet */
 .qv-panel-sheet {
-    background: linear-gradient(180deg, #98cce0 0%, #57b0d1 100%);
-}
-
-/* General filter container styles */
-.MuiGrid-root.MuiGrid-container {
-    border: 1px solid #deefff !important;
-    color: #004b68 !important;
-}
-
-/* Filter column layout styling */
-.MuiGrid-container.MuiGrid-direction-xs-column {
-    border: 2px solid #deefff !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(#deefff 70%, #a1c5d8 100%) !important;
-    color: #004b68 !important;
-    border-radius: 4px;
+    background: linear-gradient(180deg, #addbeb 0%, #46add2 100%);
 }
 
 /* Chart and KPI container styling */
 .qv-object-container {
-    background-color: rgba(224, 240, 255, 0.8);
+    background-color: rgba(231, 242, 254, 0.8);
     border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.65);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
     padding: 0px 2px 5px 2px;
     margin: 0px 2px 10px 2px;
 }
@@ -35,9 +20,9 @@
 .qv-object-table,
 .qv-object-combochart,
 .qv-object-piechart {
-    background-color: rgba(224, 240, 255, 1);
+    background-color: rgba(231, 242, 253, 1);
     border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.65);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
     margin: 0px 2px 10px 2px;
 }
 
@@ -73,13 +58,13 @@
 
 /* Tab row appearance */
 .qsc-tab-row .lui-tab {
-    color: #111 !important;
+    color: black !important;
     cursor: pointer !important;
 }
 
 /* KPI styling */
 .qv-object-kpi {
-    background-color: rgba(145, 200, 220, 0);
+    background-color: rgba(91, 182, 215, 0);
     border-radius: 1px;
     padding: 5px;
     margin: 5px 0;
