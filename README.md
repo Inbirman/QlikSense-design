@@ -122,3 +122,9 @@ Make sure that the theme is "Sense Classic".
 - Dark mode theme  
 - Project-based themes (different palettes or layouts for different dashboards)  
 - Hover effects (test carefully — they sometimes blur visualizations)
+
+## Included CSS File
+
+A CSS file named `style.css` is included in this repository.  
+You can copy and paste its contents directly into the **Styles (CSS)** section of a KPI object, as described in the steps above.
+
