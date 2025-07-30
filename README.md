@@ -125,6 +125,6 @@ Make sure that the theme is "Sense Classic".
 
 ## Included CSS File
 
-A CSS file named `style.css` is included in this repository.  
+A CSS file named `style-template.css` is included in this repository.  
 You can copy and paste its contents directly into the **Styles (CSS)** section of a KPI object, as described in the steps above.
 
